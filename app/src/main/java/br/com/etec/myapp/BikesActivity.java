@@ -49,6 +49,13 @@ public class BikesActivity extends AppCompatActivity {
 
             }
         });
+        idViewPagerBikes.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
+            @Override
+            public void onPageSelected(int position) {
+                super.onPageSelected(position);
+                idTabLayoutBikes.getTabAt(position);
+            }
+        });
 
     }
 }
