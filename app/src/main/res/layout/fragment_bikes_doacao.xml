@@ -12,5 +12,5 @@
        android:layout_gravity= "bottom|right"
        android:layout_margin="30dp"
        android:id="@+id/idFABBikeDoacao"
-       android:src="@drawable/GiftCard"
+       android:src="@drawable/baseline_card_giftcard"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
