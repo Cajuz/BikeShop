@@ -1,5 +1,6 @@
 package br.com.etec.myapp;
 
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -24,4 +25,5 @@ public class RecycleAdapterBikesDoacao extends RecyclerView.Adapter<RecycleAdapt
     }
 
     public class ViewHolder extends RecyclerView.Adapter
-}
+    }
+

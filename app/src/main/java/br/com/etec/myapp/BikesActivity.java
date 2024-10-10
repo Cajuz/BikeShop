@@ -1,6 +1,8 @@
 package br.com.etec.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,12 +11,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.tabs.TabLayout;
 
 public class BikesActivity extends AppCompatActivity {
    TabLayout idTabLayoutBikes;
    ViewPager2 idViewPagerBikes;
    AdpterViewPagerBikes adpterViewPagerBikes;
+   MaterialToolbar idTollBarBike;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +29,8 @@ public class BikesActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        idTollBarBike = findViewById(R.id.TollBarBike);
+
         idTabLayoutBikes = findViewById(R.id.idTabLayoutBikes);
         idViewPagerBikes = findViewById(R.id.idViewPagerBikes);
 
@@ -56,6 +62,17 @@ public class BikesActivity extends AppCompatActivity {
                 idTabLayoutBikes.getTabAt(position);
             }
         });
+
+        idTollBarBike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),
+                        MenuPrincipalActivity.class));
+                finish();
+            }
+        });
+
+
 
     }
 }
