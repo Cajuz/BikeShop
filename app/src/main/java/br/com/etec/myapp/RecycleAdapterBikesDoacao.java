@@ -24,6 +24,12 @@ public class RecycleAdapterBikesDoacao extends RecyclerView.Adapter<RecycleAdapt
         return 0;
     }
 
-    public class ViewHolder extends RecyclerView.Adapter
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
     }
+        }
+          }
+
 
