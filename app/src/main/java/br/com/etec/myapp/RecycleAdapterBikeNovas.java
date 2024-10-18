@@ -40,8 +40,8 @@ public class RecycleAdapterBikeNovas extends RecyclerView.Adapter<RecycleAdapter
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.idModeloTituloBikeNova.setText(lstBikeNova.get(position.getTitulo()));
-        holder.idModeloImagemBikeNova.setImageResource(lstBikeNova.get(position.getImagem()));
+        holder.idModeloTituloBikeNova.setText(lstBikeNova.get(position).getTitulo());
+        holder.idModeloImagemBikeNova.setImageResource(lstBikeNova.get(position).getImagem());
 
     }
 
