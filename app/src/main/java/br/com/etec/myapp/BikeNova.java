@@ -14,21 +14,23 @@ public class BikeNova {
 
 
      //metodo de acesso get e set
-     public String getTitulo() {
-         return titulo;
-     }
 
-public void setTitulo(String titulo) {
-    this.titulo = titulo;
-}
 
-public int getImagem() {
-    return imagem;
-}
+    public String getTitulo() {
+        return titulo;
+    }
 
-public void setImagem(int imagem) {
-    this.imagem = imagem;
-}
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public int getImagem() {
+        return imagem;
+    }
+
+    public void setImagem(int imagem) {
+        this.imagem = imagem;
+    }
 }
    
 
